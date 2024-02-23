@@ -1,5 +1,15 @@
 @charset "Utf-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+
+}
+
 :root {
     --font1: Verdana, 'Geneva', Tahoma, sans-serif;
     --font2:  'Passion One', 'cursive';
@@ -7,36 +17,51 @@
 }
 
 body {
-    max-height: 98vh;
+
     background-color: white(169, 169, 169, 0.151);
     font-family:var(--font1) ;
-    
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-    font-size: 1em;
-}
 header {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10%;
+    
 }
 header > h1 {
-    font-size: 4em;
+    padding-top: 50px;
+    font-variant: small-caps;
+    
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 
 section {
-    padding: 10px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height:3em;
 }
 
-.normal > p {
-    font-size: 2em;
-    line-height: 2em;
+section.normal {
+    background-color: white;
+    color: black;
+
 }
+
     
 
 section#img01 {
@@ -51,7 +76,6 @@ section#img01 {
     min-width: 300px;
     min-height: 300px;
     font-size: 2em;
-    line-height: 2em;
     text-shadow: 2px 2px 0px black;
  }
 
@@ -67,7 +91,6 @@ section#img02 > p {
     min-width: 300px;
     min-height: 300px;
     font-size: 2em;
-    line-height: 2em;
     text-shadow: 2px 2px 0px black;
 }
 
@@ -77,4 +100,5 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
+    padding: 5px;
 }
