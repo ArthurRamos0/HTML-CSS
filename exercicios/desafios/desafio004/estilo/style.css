@@ -63,6 +63,11 @@ section {
     font-size: 3.5vw;
 }
 
+section > p {
+    padding-bottom: 1.5em;
+
+}
+
 section.normal {
     background-color: white;
     color: black;
@@ -79,7 +84,7 @@ section#img01 {
 
 section#img02 {
     background-image: url(../imagens/background002.jpg);
-    background-position:   center center;
+    background-position:   right center;
     background-size: cover;
     background-attachment: fixed;
 }
