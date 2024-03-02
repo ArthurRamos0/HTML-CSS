@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family:  Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        td, th {
+            text-align: center;
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td.num {
+            text-align: right;
+        }
+        
+        td.nome {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD(CABEÇA)
+                TR, TD, TH
+            TBODY(CORPO)
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>1º</td>
+                    <td class="nome">São Paulo</td>
+                    <td class="num">44 411 238</td>
+                </tr>
+                <tr>
+                    <td>2º</td>
+                    <td class="nome">Minas Gerais</td>
+                    <td class="num">20 538 718</td>
+                </tr>
+                <tr>
+                    <td>3º</td>
+                    <td class="nome">Rio de Janeiro</td>
+                    <td class="num">16 054 524</td>
+                </tr>
+                <tr>
+                    <td>4°</td>
+                    <td class="nome">Bahia</td>
+                    <td class="num">14 141 626</td>
+                </tr>
+                <tr>
+                    <td>5°</td>
+                    <td class="nome">Paraná</td>
+                    <td class="num">11 444 380</td>
+                </tr>
+                <tr>
+                    <td>6°</td>
+                    <td class="nome">Rio Grande do Sul</td>
+                    <td class="num">10 882 965</td>
+                </tr>
+                <tr>
+                    <td>7°</td>
+                    <td class="nome">Pernambuco</td>
+                    <td class="num">9 058 931</td>
+                </tr>
+                <tr>
+                    <td>8°</td>
+                    <td class="nome">Ceará</td>
+                    <td class="num">8 794 957</td>
+                </tr>
+                <tr>
+                    <td>9°</td>
+                    <td class="nome">Pará</td>
+                    <td class="num">8 121 025</td>
+                </tr>
+                <tr>
+                    <td>10°</td>
+                    <td class="nome">Santa Catarina</td>
+                    <td class="num">7 610 361</td>
+                </tr>
+                <tr>
+                    <td>11°</td>
+                    <td class="nome">Goiás</td>
+                    <td class="num">7 056 495</td>
+                </tr>
+                <tr>
+                    <td>12°</td>
+                    <td class="nome">Maranhão</td>
+                    <td class="num">6 775 805</td>
+                </tr>
+                <tr>
+                    <td>13°</td>
+                    <td class="nome">Paraíba</td>
+                    <td class="num">3 974 687</td>
+                </tr>
+                <tr>
+                    <td>14°</td>
+                    <td class="nome">Amazonas</td>
+                    <td class="num">3 941 613</td>
+                </tr>
+                <tr>
+                    <td>15°</td>
+                    <td class="nome">Espírito Santo</td>
+                    <td class="num">3 833 712</td>
+                </tr>
+                <tr>
+                    <td>16°</td>
+                    <td class="nome">Mato Grosso</td>
+                    <td class="num">3 658 649</td>
+                </tr>
+                <tr>
+                    <td>17°</td>
+                    <td class="nome">Rio Grande do Norte</td>
+                    <td class="num">3 302 729</td>
+                </tr>
+                <tr>
+                    <td>18°</td>
+                    <td class="nome">Piauí</td>
+                    <td class="num">3 271 199</td>
+                </tr>
+                <tr>
+                    <td>19°</td>
+                    <td class="nome">Alagoas</td>
+                    <td class="num">3 127 683</td>
+                </tr>
+                <tr>
+                    <td>20°</td>
+                    <td class="nome">Distrito Federal</td>
+                    <td class="num">2 817 381</td>
+                </tr>
+                <tr>
+                    <td>21°</td>
+                    <td class="nome">Mato Grosso do sul</td>
+                    <td class="num">2 757 013</td>
+                </tr>
+                <tr>
+                    <td>22°</td>
+                    <td class="nome">Sergipe</td>
+                    <td class="num">2 209 558</td>
+                </tr>
+                <tr>
+                    <td>23°</td>
+                    <td class="nome">Rondônia</td>
+                    <td class="num">1 581 196</td>
+                </tr>
+                <tr>
+                    <td>24°</td>
+                    <td class="nome">Tocantins</td>
+                    <td class="num">1 511 460</td>
+                </tr>
+                <tr>
+                    <td>25°</td>
+                    <td class="nome">Acre</td>
+                    <td class="num">830 018</td>
+                </tr>
+                <tr>
+                    <td>26°</td>
+                    <td class="nome">Amapá</td>
+                    <td class="num">733 759</td>
+                </tr>
+                <tr>
+                    <td>27°</td>
+                    <td class="nome">Roraima</td>
+                    <td class="num">636 707</td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td>--</td>
+                        <th>Total de Habitantes</th>
+                        <td><strong>+/-220 147 125</strong></td>
+                    </tr>
+                </tfoot>
+            </tbody>
+        </thead>
+        
+    </table>
+    
+</body>
+</html>
