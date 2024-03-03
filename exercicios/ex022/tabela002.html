@@ -10,14 +10,37 @@
         }
 
         table {
-            width: 400px;
+            width: 500px;
             border-collapse: collapse;
-            
+            position: relative;
         }
+
         thead, tfoot {
             background-color: gray;
             color: white;
         }
+    
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+        caption {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            background-color: rgba(128, 128, 128, 0.527);
+            font-weight: bold;
+            padding:10px ;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgrey;
+        }
+        /*
+        ODD (2n-1) = impar
+        EVEN (2n) = par
+        */
 
         td, th {
             text-align: center;
@@ -47,11 +70,12 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
             <tbody>
                 <tr>
@@ -191,8 +215,8 @@
                 </tr>
                 <tfoot>
                     <tr>
-                        <td>--</td>
-                        <th>Total de Habitantes</th>
+                        
+                        <th scope="row" colspan="2">Total de Habitantes</th>
                         <td><strong>+/-220 147 125</strong></td>
                     </tr>
                 </tfoot>
